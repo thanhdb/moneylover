@@ -19,6 +19,7 @@ require 'model.php';
 
 		public function insert($data)
 		{
+			// $data = array();
 			return db_insert($this->table, $data);
 		}
 	}

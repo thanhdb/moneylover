@@ -25,7 +25,7 @@
 <div class="container">
     <div class="col-md-9">
         <!-- <div class="container" style="width: 50%"> -->
-            <form name="addpost" action="" method="POST" role="form">
+            <form name="addpost" action="index.php?c=quanly&m=addpost" method="POST" role="form">
                 <legend>Thêm bài viết</legend>
             
                 <div class="form-group">
@@ -35,6 +35,8 @@
                     <textarea name="content" id="content" class="form-control" rows="3"></textarea>
                     <label for="">Description</label>
                     <input name="description" type="text" class="form-control" id="" placeholder="Input field">
+                    <label>Time</label>
+                    <input type="date" name="write_time" class="form-control" style="max-width: 30%">
                 </div>
                 
                     <script>
@@ -46,8 +48,6 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
-            <?php var_dump($_POST['content']); die(); ?>
-
 
         <div class="col-md-3">  
             <?php include FC_DIR . DS . 'views' . DS . $sidebar ?>

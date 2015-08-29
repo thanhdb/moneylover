@@ -27,11 +27,13 @@
 
 	function quanly_addpost()
 	{
-		$data = array();
+		// $data = array();
 
 		if(isPostRequest())
 		{
 			$postData = postData();
+			model('content')->insert($postData);
+			redirect('index.php?c=quanly&m=baiviet');
 		}
 	}
 

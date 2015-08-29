@@ -28,6 +28,7 @@ function db_get_all($sql) {
 
 function db_insert($table, $data) {
     $fields = array_keys($data);
+    // var_dump($fields); die();
     $e_data = array_map('mysql_real_escape_string', $data);
     
     $sql = "INSERT INTO `{$table}` (`" . implode('`, `', $fields). "`) VALUES ('"  . implode("', '", $e_data) . "')";
