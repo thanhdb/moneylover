@@ -14,7 +14,7 @@
 									<td><?php echo $value['email']; ?></td>
 									<td><?php echo $value['password']; ?></td>
 									<td><?php echo $value['name']; ?></td>
-									<td><a href="index.php?c=quanly&m=deletemember">
+									<td><a href="index.php?c=quanly&m=deletemember&id=<?php echo $value['id']; ?>">
 									<button name="delete" class="btn btn-warning">Delete</button></a></td>
 								</tr>
 							<?php endforeach ?>

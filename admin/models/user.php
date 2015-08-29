@@ -11,10 +11,14 @@ require 'model.php';
 			return db_get_all($sql);
 		}
 
-		public function delete($user_id)
+		public function delete($user_id, $value = null)
 		{
-			$sql = "DELETE FROM `{$this->table}` WHERE {$this->primary_key} = ".$user_id;
-			return db_get_all($sql);
+			if($value == null)
+			{
+				$value = $this->primary_key;
+			}
+			// $sql = "DELETE FROM `{$this->table}` WHERE {$value} = ".$user_id;
+			return db_delete($this->table,"{$value} = ".$user_id);
 		}
 	}
  ?>

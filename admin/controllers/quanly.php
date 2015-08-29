@@ -25,8 +25,25 @@
 		render('layout.php', $data);
 	}
 
+	function quanly_addpost()
+	{
+		$data = array();
+
+		if(isPostRequest())
+		{
+			$postData = postData();
+		}
+	}
+
 	function quanly_deletemember()
 	{
-		
+		model('user')->delete($_GET['id']);
+		redirect('index.php?c=quanly&m=thanhvien');
+	}
+
+	function quanly_deletepost()
+	{
+		model('content')->delete($_GET['id']);
+		redirect('index.php?c=quanly&m=baiviet');
 	}
  ?>
