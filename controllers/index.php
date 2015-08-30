@@ -1,6 +1,7 @@
 <?php
 
-function index_index() {
+function index_index() 
+{
     $data = array();
 	$data['content'] = model('content')->all();
 	$data['template_file'] = 'index/index.php';

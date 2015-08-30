@@ -1,7 +1,7 @@
 	<div class="about">
 		<div class="container">
 			<div class="about-main">
-				<div class="col-md-8 about-left">
+				<div class="col-md-9 about-left">
 					<div class="about-one">
 						<p>Find The Most</p>
 						<h3>Coffee of the month</h3>
@@ -27,7 +27,7 @@
 						<div class="a-1">
     				<?php foreach ($content as $value) {?>
 							<div class="col-md-6 abt-left">
-								<a href="single.html"><img src="./styles/images/c-3.jpg" alt="" /></a>
+								<a href="#"><img src="./styles/images/c-3.jpg" alt="" /></a>
 								<h6>Find The Most</h6>
 								<h3><a href="#"><?php echo $value['title']; ?></a></h3>
 								<p><?php echo $value['description']; ?></p>
@@ -39,7 +39,7 @@
 					</div>
 						
 				</div>
-				<div class="col-md-4 about-right heading">
+				<div class="col-md-3 about-right heading">
     			
     			<?php include ROOT . DS . 'views' . DS . $sidebar_signin; ?>
     			<?php include ROOT . DS . 'views' . DS . $sidebar_signup; ?>
@@ -49,7 +49,7 @@
 						<h3>YOU MIGHT ALSO LIKE</h3>
 							<div class="might-grid">
 								<div class="grid-might">
-									<a href="single.html"><img src="./styles/images/c-12.jpg" class="img-responsive" alt=""> </a>
+									<a href="#"><img src="./styles/images/c-12.jpg" class="img-responsive" alt=""> </a>
 								</div>
 								<div class="might-top">
 									<h4><a href="#">Duis consectetur gravida</a></h4>

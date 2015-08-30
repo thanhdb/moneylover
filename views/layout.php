@@ -40,11 +40,12 @@
             <div class="navigation">
                  <span class="menu"></span> 
                     <ul class="navig">
-                        <li><a href="index.html"  class="active">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="typo.html">Typo</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.php"  class="active">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Typo</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.php?c=store&m=index">Store</a></li>
                     </ul>
             </div>
             <div class="header-right">

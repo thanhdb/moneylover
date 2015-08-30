@@ -12,7 +12,9 @@
 		  					</ul>		  						
 						<!-- insert content here -->
 					</div>
-					<div class="comments heading">
+    				<!--<?php include ROOT . DS . 'views' . DS . $comment; ?>-->
+
+					<!-- <div class="comments heading">
 						<h3>Comments</h3>
 						<div class="media">
 					      	<div class="media-body">
@@ -36,7 +38,7 @@
 					      </div>
 					    </div>
     				</div>
-    				<div class="comment-bottom heading">
+    				<div class="comment-bottom heading"> -->
     					<h3>Your Comment</h3>
     					<form>
 						<?php if (isLogged()==false): ?>
@@ -45,7 +47,7 @@
 							<input  type="submit" value="Send" disabled= "disabled">
 						<?php else: ?>
 							<textarea cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
-							<input type="submit" value="Send">
+							<a href="index.php?m=comment&c=post" title=""><input type="submit" value="Send"></a>
 						<?php endif; ?>
 
 					</form>
