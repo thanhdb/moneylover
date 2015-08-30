@@ -4,33 +4,17 @@
 			<div class="col-md-9">
 			<div class="about-tre">
 						<div class="a-1">
-						<!-- <div class="col-md-6 abt-left"> -->
 						<ul class="home">
 						<?php foreach ($product as $key => $value) { ?>
 							<li>
-								<a href="#" title="">
+								<a href="index.php?c=store&m=detail&id=<?php echo $value['id']; ?>" title="">
 									<img src="<?php echo $value['image'] ?>" alt="" width="240px" height="200px">
 									<h3><?php echo $value['name']; ?></h3>
 									<strong><?php echo "$".$value['price']." / pound"; ?></strong>
-									<button type="button" class="btn">Mua ngay</button>
+									<button type="button" class="btn">Purchase</button>
 								</a>
 							</li>
 						<?php } ?>
-							<!-- <li>
-								<a href="#" title="">
-									<img src="" alt="" width="240px" height="240px">
-								</a>
-							</li>
-							<li>
-								<a href="#" title="">
-									<img src="" alt="" width="240px" height="240px">
-								</a>
-							</li>
-							<li>
-								<a href="#" title="">
-									<img src="" alt="" width="240px" height="240px">
-								</a>
-							</li> -->
 						</ul>
 						</div>
 			</div>

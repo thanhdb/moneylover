@@ -2147,15 +2147,12 @@ ul.blog-ic {
 
 .home li a button
 {
-	/*position: absolute;*/
 	background: #190608;
 	color: #fff;
 	margin-right: 10px;
 	margin-left: 30px;
 	top: 20px;
 	padding: 6px 20px;
-	/*border: 1px solid #fff;*/
 	z-index: 10;
-	/*margin-left: 20px;*/
 	margin-right: 5px;
 }
