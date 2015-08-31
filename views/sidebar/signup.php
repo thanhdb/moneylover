@@ -7,6 +7,7 @@
 <?php if (isLogged() == false): ?>
 <!-- <div class="col-md-4 about-right heading"> -->
 <div class="abt-2">
+		<div class="abt-one">
 	<form action="index.php?c=auth&m=register" method="POST" role="form">
 		<legend>Sign up</legend>
 		<div class="form-group">
@@ -17,7 +18,7 @@
 		<button id="dangki" type="submit" class="btn">Sign up</button>
 	</form>
 </div>
-<!-- </div> -->
+</div>
 <?php endif; ?>
 
 

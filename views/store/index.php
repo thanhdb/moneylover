@@ -11,7 +11,7 @@
 									<img src="<?php echo $value['image'] ?>" alt="" width="240px" height="200px">
 									<h3><?php echo $value['name']; ?></h3>
 									<strong><?php echo "$".$value['price']." / pound"; ?></strong>
-									<button type="button" class="btn">Purchase</button>
+									<button type="button" class="btn">Details</button>
 								</a>
 							</li>
 						<?php } ?>

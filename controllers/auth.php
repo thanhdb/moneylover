@@ -25,11 +25,9 @@ function auth_login() {
 
 function auth_register() {
     $data = array();
-    // $data['template_file'] = 'auth/register.php';
     
     if (isPostRequest()) {
         $postData = postData();
-        var_dump($postData);
         if (model('user')->authRegister($postData)) 
         {
             redirect('index.php');

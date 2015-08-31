@@ -10,6 +10,7 @@
 	<div class="abt-1">
 		<div class="abt-one">
 			<h3><a href="#">Welcome <strong><?php echo $logged['name']; ?></strong></a></h3>
+			<h3><a href="index.php?c=store&m=total">Your Cart</a></h3>
 			<h3><a href="index.php?c=auth&m=logout">Logout</a></h3>
 		</div>
 	</div>
