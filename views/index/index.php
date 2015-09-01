@@ -79,16 +79,6 @@
 							</div>							
 					</div>
 					
-					<div class="abt-2">
-						<h3>NEWS LETTER</h3>
-						<div class="news">
-							<form>
-								<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
-								<input type="submit" value="Subscribe">
-							</form>
-						</div>
-					</div>
-					
 				</div>
 				<div class="clearfix"></div>			
 			</div>		

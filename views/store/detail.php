@@ -1,8 +1,3 @@
-<?php
-	// session_start();
-?>
-
-
 <?php if (isset($error)): ?>
 <div class="alert alert-error">
 <?php echo $error; ?>
@@ -30,7 +25,7 @@
 					<img src="<?php echo $img ?>" alt=""><br>
 					<h3><?php echo $name ?></h3>
 					<strong><?php echo "$".$price." / pound"; ?></strong> 
-					<h3 style="font-size: 1em"><p>Quantity: </p><input type="number" name="quantity" min="1" value="$_SESSION['product']['quantity']"></h3>
+					<h3 style="font-size: 1em"><p>Quantity: </p><input type="number" name="quantity" min="1" value="1"></h3>
 					<input type="hidden" name="c" value="store">
 					<input type="hidden" name="m" value="cart">
 					<input type="hidden" name="id" value="<?php echo $id; ?>">

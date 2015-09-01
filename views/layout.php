@@ -4,11 +4,13 @@
     <title>Coffee Break a Blog Category Flat Bootstarp responsive Website Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Coffee Break Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <link href="./styles/css/bootstrap.css" rel='stylesheet' type='text/css' />
     <link href="./styles/css/style.css" rel='stylesheet' type='text/css' />
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="./styles/js/jquery.min.js"></script>
     <!---- start-smoth-scrolling---->
     <script type="text/javascript" src="./styles/js/move-top.js"></script>
@@ -40,7 +42,7 @@
             <div class="navigation">
                  <span class="menu"></span> 
                     <ul class="navig">
-                        <li><a href="index.php"  class="active">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Gallery</a></li>
                         <li><a href="#">Typo</a></li>
