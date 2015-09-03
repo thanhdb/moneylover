@@ -17,6 +17,21 @@
 	    render('layout.php', $data);
 	}
 
+	function quanly_comment()
+	{
+		$data = array();
+		$data['comment']= model('comment')->getDone();
+
+		$data['template_file'] = 'quanly/qlcomment.php';
+	    $data['sidebar'] = 'sidebar/sidebar.php';
+		render('layout.php',$data);
+	}
+
+	function quanly_sanpham()
+	{
+
+	}
+
 	// function quanly_addproduct()
 	// {
 	//     $data = array();
@@ -46,6 +61,23 @@
 		render('layout.php', $data);
 	}
 
+	function quanly_editpost()
+	{
+		$data = array();
+
+		if(isPostRequest())
+		{
+			$postData = postData();
+			model('content')->update($postData, $_GET['id']);
+			redirect('index.php?c=quanly&m=baiviet');
+		}
+		$data['content'] = model('content')->getOneBy($_GET['id'],'id');
+
+		$data['template_file'] = 'article/editpost.php';
+		$data['sidebar'] = 'sidebar/sidebar.php';
+		render('layout.php', $data);
+	}
+
 	function quanly_deletemember()
 	{
 		model('user')->delete($_GET['id']);
@@ -58,8 +90,12 @@
 		redirect('index.php?c=quanly&m=baiviet');
 	}
 
-	function quanly_sanpham()
+	function quanly_deletecomment()
 	{
-
+		model('comment')->delete($_GET['id']);
+		redirect('index.php?c=quanly&m=comment');
 	}
+
+	
+
  ?>

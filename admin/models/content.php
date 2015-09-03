@@ -22,5 +22,10 @@
 			// $data = array();
 			return db_insert($this->table, $data);
 		}
+
+		public function update($data, $id)
+		{
+			return db_update($this->table, $data, 'id='.$id);
+		}
 	}
  ?>

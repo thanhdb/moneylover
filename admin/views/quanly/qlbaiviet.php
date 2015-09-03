@@ -20,7 +20,9 @@
 									<td style="width: 20%">
 									<a href="index.php?c=quanly&m=deletepost&id=<?php echo $value['id']; ?>" title="">
 									<button type="submit" name="delete" class="btn btn-warning">Delete</button></a>
-									<button type="submit" name="edit" class="btn btn-primary">Edit</button></td>
+									<a href="index.php?c=quanly&m=editpost&id=<?php echo $value['id']; ?>">
+									<button type="submit" name="edit" class="btn btn-primary">Edit</button></a>
+									</td>
 								</tr>
 							<?php endforeach ?>
 								
