@@ -15,5 +15,5 @@ CKEDITOR.editorConfig = function( config ) {
 	// config.language = 'fr';
 	// config.uiColor = '#AADC6E';
 	// config.uploadimage='plugin';
-	config.filebrowserImageUploadUrl = 'http://localhost/moneylover/includes/ckeditor/plugins/imgupload.php';
+	config.filebrowserImageUploadUrl = 'http://blogdemo.cc/includes/ckeditor/plugins/imgupload.php';
 };

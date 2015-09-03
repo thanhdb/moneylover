@@ -25,16 +25,18 @@
 <div class="container">
     <div class="col-md-9">
         <!-- <div class="container" style="width: 50%"> -->
-            <form name="addpost" action="index.php?c=quanly&m=addpost" method="POST" role="form">
+            <form name="addpost" action="" method="POST" role="form">
                 <legend>Thêm bài viết</legend>
             
                 <div class="form-group">
                     <label for="">Title</label>
-                    <input name="title" type="text" class="form-control" id="" placeholder="Input field">
+                    <input name="title" type="text" class="form-control" id="">
                     <label for="">Content</label>
                     <textarea name="content" id="content" class="form-control" rows="3"></textarea>
                     <label for="">Description</label>
-                    <input name="description" type="text" class="form-control" id="" placeholder="Input field">
+                    <input name="description" type="text" class="form-control" id="">
+                    <label for="">URL image</label>
+                    <input name="images" type="text" class="form-control" id="">
                     <label>Time</label>
                     <input type="date" name="write_time" class="form-control" style="max-width: 30%">
                 </div>
@@ -42,15 +44,17 @@
                     <script>
                         // Replace the <textarea id="editor1"> with a CKEditor
                         // instance, using default configuration.
-                        CKEDITOR.replace( 'content' );
+                        CKEDITOR.replace( 'content',{
+                            toolbarCanCollapse: true,
+                            filebrowserImageUploadUrl: 'http://blogdemo.cc/includes/ckeditor/plugins/imgpost.php'
+                        } );
                     </script>
-                <!-- <a href="index.php?c=quanly&m=addpost&data=" title=""></a> -->
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Save</button>
             </form>
         </div>
 
         <div class="col-md-3">  
-            <?php include FC_DIR . DS . 'views' . DS . $sidebar ?>
+            <?php include ROOT . DS . 'views' . DS . $sidebar ?>
         </div>
     </div>
 <!-- </div> -->

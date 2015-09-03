@@ -23,7 +23,7 @@
 					</div>
 
 					<div class="col-md-3">	
-	   					 <?php include FC_DIR . DS . 'views' . DS . $sidebar ?>
+	   					 <?php include ROOT . DS . 'views' . DS . $sidebar ?>
 					</div>
 		</div>	
 	

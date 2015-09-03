@@ -1,6 +1,6 @@
 <?php
 
-class Model_admin{
+class Model{
     public $table = '';
     public $primary_key = '';
 

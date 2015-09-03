@@ -1,6 +1,6 @@
 		<div class="container">
 				<div class="col-md-9">
-						<a href="index.php?c=quanly&m=add" title="">
+						<a href="index.php?c=quanly&m=addpost" title="">
 						<button name="add" class="btn btn-primary">Thêm bài viết</button></a>
 						<br><br>
 						<table class="table table-bordered table-hover">
@@ -28,7 +28,7 @@
 					</div>
 
 					<div class="col-md-3">	
-	   					 <?php include FC_DIR . DS . 'views' . DS . $sidebar ?>
+	   					 <?php include ROOT . DS . 'views' . DS . $sidebar ?>
 					</div>
 		</div>	
 	

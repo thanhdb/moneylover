@@ -2156,3 +2156,15 @@ ul.blog-ic {
 	z-index: 10;
 	margin-right: 5px;
 }
+
+input .cover
+{
+	border: 0;
+	background-color: #fff;
+}
+
+input .cover:hover
+{
+	border: 0;
+	background-color: #F5F5F5;
+}

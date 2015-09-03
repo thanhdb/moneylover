@@ -10,7 +10,6 @@ function auth_login() {
         {
         
             redirect('index.php');
-            
         } 
         else 
         {

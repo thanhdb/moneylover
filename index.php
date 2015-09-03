@@ -10,7 +10,12 @@
 // "`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'./o--000'"`-0-0-'"`-0-0-'./o--000'"`-0-0-'"`-0-0-'./o--000'"`-0-0-' 
 //
 define('FC_DIR', __DIR__);
-include 'bootstrap.php';
+// include 'bootstrap.php';
+error_reporting(E_ALL ^ E_DEPRECATED);
+define('DS', DIRECTORY_SEPARATOR);
+define("ROOT", __DIR__ );
+
+require ROOT . DS . 'includes' . DS . 'common.php';
 
 
 $controller = empty($_GET['c']) ? 'index' : strtolower($_GET['c']);

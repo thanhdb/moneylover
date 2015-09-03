@@ -14,6 +14,7 @@ function index_index()
 function index_showpost()
 {
 	$data = array();
+	$data['details'] = model('content')->getOneBy($_GET['id'],'id');
 	$data['template_file'] = 'article/index.php';
 	$data['sidebar_signin'] = 'sidebar/signin.php';
 	$data['sidebar_signup'] = 'sidebar/signup.php';

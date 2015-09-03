@@ -1,5 +1,5 @@
 <?php
-require 'model.php';
+// require 'model.php';
 class Payment extends Model {
     public $table = 'payments';
     public $primary_key = 'id';
@@ -21,5 +21,23 @@ class Payment extends Model {
         $postData['user_id'] = $user_id;
         
         return db_insert($this->table, $postData);
+    }
+
+    public function addToPayment($name, $unit, $quantity, $prices, $product_id)
+    {
+        $data = array();
+        $currentUser = isLogged();
+        $user_id = $currentUser['id'];
+        $paid_day = date("Y-m-d");
+        $data['user_id'] = $user_id;
+        $data['product_id'] = $product_id;
+        $data['product_name'] = $name;
+        $data['quantity'] = $quantity;
+        $data['prices'] = $prices;
+        $data['paid_day'] = $paid_day;
+
+        // $sql = "INSERT INTO `{$this->table}` (user_id, product_id, product_name, quantity, prices, paid_day) 
+        //         VALUES ({$user_id}, {$product_id}, {$name}, {$quantity}, {$prices}, {$paid_day})";
+        return db_insert($this->table, $data);
     }
 }

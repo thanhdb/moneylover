@@ -1,6 +1,6 @@
 <?php 
-require 'model.php';
-class Admin extends Model_admin
+// require 'model.php';
+class Admin extends Model
 {
 	public $table = 'admin';
 	// public $primary_key = 'id';

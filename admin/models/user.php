@@ -1,6 +1,5 @@
 <?php 
-require 'model.php';
-	class User extends Model_admin
+	class User extends Model
 	{
 		public $table = 'users';
 		public $primary_key = 'id';

@@ -3,13 +3,13 @@
 session_start();
 
 require 'db.php';
-require ROOT . DS . 'models/model.php';
+require 'models/model.php';
 
 function model($model) {
     static $models = array();
     $model = strtolower($model);
     if (!isset($models[$model])) {
-        include FC_DIR . DS . 'models' . DS . $model . '.php';
+        include ROOT . DS . 'models' . DS . $model . '.php';
     }
         
         $model_name = ucfirst($model);
@@ -39,7 +39,7 @@ function render($file, $data) {
     // var_dump($data); die();
     ob_start();
     
-    include FC_DIR . DS . 'views' . DS . $file;
+    include ROOT . DS . 'views' . DS . $file;
     
     ob_end_flush();
     // ob_clean();

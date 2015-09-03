@@ -27,7 +27,7 @@
 						<div class="a-1">
     				<?php foreach ($content as $value) {?>
 							<div class="col-md-6 abt-left">
-								<a href="#"><img src="./styles/images/c-3.jpg" alt="" /></a>
+								<a href="index.php?c=index&m=showpost&id=<?php echo $value['id']; ?>"><img src="<?php echo $value['images']; ?>" style="width: 350px; height: 250px" /></a>
 								<h6>Find The Most</h6>
 								<h3><a href="#"><?php echo $value['title']; ?></a></h3>
 								<p><?php echo $value['description']; ?></p>

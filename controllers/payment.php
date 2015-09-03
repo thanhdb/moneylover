@@ -25,3 +25,20 @@ function payment_add() {
     $data['template_file'] = 'payment/add.php';
     render('layout.php', $data);
 }
+
+function payment_cart()
+{
+    // $data = array();
+    $currentUser = isLogged();
+    if(isPostRequest())
+    {
+
+        $postData = postData();
+        foreach ($postData['name'] as $key => $value) 
+        {
+            model('payment')->addToPayment($postData['name'][$key], $postData['unit'][$key],
+                $postData['quantity'][$key],$postData['prices'][$key], $key);           
+        }
+        echo 'true';
+    }
+}
