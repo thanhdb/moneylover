@@ -12,7 +12,7 @@
 						<p>Phasellus fringilla enim nibh, ac pharetra nulla vestibulum ac. Donec tempor fermentum felis, non placerat sem ultrices ut. Nam molestie nunc nec felis hendrerit, in pulvinar arcu mollis. Quisque eget purus nec velit venenatis tincidunt vitae ac massa. Proin vel ornare tellus. Duis consectetur gravida tellus ut varius. Aenean tellus massa, laoreet ut euismod et, pretium id ex. Mauris hendrerit suscipit hendrerit.</p>
 						<p>Quisque ultrices ligula a nisl porttitor, vitae porta tortor eleifend. Nulla nec imperdiet ipsum, ut cursus mauris. Proin ut sodales sem, quis vestibulum libero. Proin tempor venenatis congue. Phasellus mollis massa sit amet pharetra consequat. Aliquam quis lacus at sapien tempor semper. Sed ultrices et metus et elementum. Nunc sed justo at erat consequat mollis et eu lectus.</p>
 						<div class="about-btn">
-							<a href="index.php?c=index&m=showpost">Read More</a>
+							<a href="">Read More</a>
 						</div>
 						<ul>
 							<li><p>Share : </p></li>
@@ -36,6 +36,18 @@
 					<?php } ?>
 							<div class="clearfix"></div>
 						</div> 
+
+					</div>
+					<div class="paging" style="text-align: center; margin-top: 20px;">
+					<ul class="pagination">
+						  <li class="disabled"><a href="#">&laquo;</a></li>
+						  <li><a href="">1</a></li>
+						  <li><a href="">2</a></li>
+						  <li><a href="">3</a></li>
+						  <li><a href="">4</a></li>
+						  <li><a href="">5</a></li>
+						  <li><a href="">&raquo;</a></li>
+					</ul>
 					</div>
 						
 				</div>

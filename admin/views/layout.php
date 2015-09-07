@@ -32,6 +32,6 @@
         </div>
     </div>
     <div class="container">
-    <?php include ROOT . DS . 'views' . DS . $template_file; ?>
+        <?php include ROOT . DS . 'views' . DS . $template_file; ?>
     </div>
 </body>

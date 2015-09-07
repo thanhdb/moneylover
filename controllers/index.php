@@ -29,3 +29,5 @@ function index_showpost()
 	render('layout.php', $data);
 }
 
+
+

@@ -8,8 +8,7 @@
     <link href="./styles/css/bootstrap.css" rel='stylesheet' type='text/css' />
     <link href="./styles/css/style.css" rel='stylesheet' type='text/css' />
     <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
     <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <script src="./styles/js/jquery.min.js"></script>
     <script src="./styles/js/bootstrap.js"></script>
@@ -45,10 +44,10 @@
                  <span class="menu"></span> 
                     <ul class="navig">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Typo</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Typo</a></li>
+                        <li><a href="">Contact</a></li>
                         <li><a href="index.php?c=store&m=index">Store</a></li>
                     </ul>
             </div>
@@ -58,11 +57,11 @@
                     <input type="submit" value="">
                 </div>
                 <ul>
-                    <li><a href="#"><span class="fb"> </span></a></li>
-                    <li><a href="#"><span class="twit"> </span></a></li>
-                    <li><a href="#"><span class="pin"> </span></a></li>
-                    <li><a href="#"><span class="rss"> </span></a></li>
-                    <li><a href="#"><span class="drbl"> </span></a></li>
+                    <li><a href=""><span class="fb"> </span></a></li>
+                    <li><a href=""><span class="twit"> </span></a></li>
+                    <li><a href=""><span class="pin"> </span></a></li>
+                    <li><a href=""><span class="rss"> </span></a></li>
+                    <li><a href=""><span class="drbl"> </span></a></li>
                 </ul>
             </div>
                 <div class="clearfix"></div>
@@ -85,7 +84,7 @@
                         <h2>Aliquam erat</h2>
                         <h1>Suspendisse potenti</h1>
                         <div class="banner-btn">
-                            <a href="#">Read More</a>
+                            <a href="">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -99,42 +98,42 @@
             <div class="fle-xsel">
             <ul id="flexiselDemo3">
                 <li>
-                    <a href="#">
+                    <a href="">
                         <div class="banner-1">
                             <img src="./styles/images/s-1.jpg" class="img-responsive" alt="">
                         </div>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="">
                         <div class="banner-1">
                             <img src="./styles/images/s-2.jpg" class="img-responsive" alt="">
                         </div>
                     </a>
                 </li>           
                 <li>
-                    <a href="#">
+                    <a href="">
                         <div class="banner-1">
                             <img src="./styles/images/s-3.jpg" class="img-responsive" alt="">
                         </div>
                     </a>
                 </li>       
                 <li>
-                    <a href="#">
+                    <a href="">
                         <div class="banner-1">
                             <img src="./styles/images/s-4.jpg" class="img-responsive" alt="">
                         </div>
                     </a>
                 </li>   
                 <li>
-                    <a href="#">
+                    <a href="">
                         <div class="banner-1">
                             <img src="./styles/images/s-5.jpg" class="img-responsive" alt="">
                         </div>
                     </a>
                 </li>   
                 <li>
-                    <a href="#">
+                    <a href="">
                         <div class="banner-1">
                             <img src="./styles/images/s-6.jpg" class="img-responsive" alt="">
                         </div>
